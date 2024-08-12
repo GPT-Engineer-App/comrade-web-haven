@@ -1,4 +1,4 @@
-import { Home } from "lucide-react";
+import { Hammer, Book, Users, BarChart3 } from "lucide-react";
 import Index from "./pages/Index.jsx";
 
 /**
@@ -6,9 +6,27 @@ import Index from "./pages/Index.jsx";
  */
 export const navItems = [
   {
-    title: "Home",
+    title: "The People's Home",
     to: "/",
-    icon: <Home className="h-4 w-4" />,
+    icon: <Hammer className="h-4 w-4" />,
     page: <Index />,
+  },
+  {
+    title: "Manifesto",
+    to: "/manifesto",
+    icon: <Book className="h-4 w-4" />,
+    page: <div>Manifesto Page</div>,
+  },
+  {
+    title: "Collective",
+    to: "/collective",
+    icon: <Users className="h-4 w-4" />,
+    page: <div>Collective Page</div>,
+  },
+  {
+    title: "Five-Year Plan",
+    to: "/five-year-plan",
+    icon: <BarChart3 className="h-4 w-4" />,
+    page: <div>Five-Year Plan Page</div>,
   },
 ];
